@@ -1,0 +1,20 @@
+<div class="center hero-unit">
+  <h1>Search engine</h1>
+  <div class="row">
+    <div class="span6 offset2">
+      <%= form_for search_path, method: :get do |f| %>
+      <%= f.label "Search by name or email" %>
+      <%= text_field_tag :q, params[:q] %>
+      <%= submit_tag "Go!", name: nil %>
+      <% end %>
+    </div>
+      <div class="span6 offset2">
+	<div class="row">
+	  <% if !@user.nil? %>
+	  <p>name: <%= @user.name %><br/>
+	    email: <%= @user.email %> </p>
+	  <% end %>
+	</div>
+      </div>
+  </div>
+</div>

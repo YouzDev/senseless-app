@@ -1,0 +1,10 @@
+class Search < ActiveRecord::Base
+
+  def query(search)
+    if search
+      @search = 
+    else
+    end
+  end
+
+end
