@@ -1,17 +1,29 @@
+<% if signed_in? %>
+<div class="row">
+  <aside class="col-md-4">
+    <section class="user_info">
+      <%= render 'shared/user_info' %>
+    </section>
+    <section class="micropost_form">
+      <%= render 'shared/micropost_form' %>
+    </section>
+  </aside>
+</div>
+<% else %>
+
 <div class="center hero-unit">
   <h1>Welcome to Paradise</h1>
-
+  
   <h2>
     This is the <%= @titre %> page.
   </h2>
 
   <p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et turpis nisi. Vestibulum laoreet dui non pharetra venenatis. Duis et accumsan elit, in lacinia purus. Praesent quis neque mattis, dapibus ipsum nec, vestibulum tellus. Fusce maximus risus finibus tellus porttitor, tempor sodales ligula malesuada. Curabitur lorem dui, tincidunt in elit quis, dictum efficitur neque. Aliquam tristique nisi eu erat maximus auctor. Maecenas et tortor vitae dolor varius volutpat sed nec turpis. Praesent fringilla lacus ac dolor porttitor gravida.
+    
+    Mauris porttitor quam tortor. Proin sit amet orci nec ligula tincidunt lobortis. Nam id nibh euismod, sollicitudin mi id, porta velit. Quisque venenatis orci purus, sit amet facilisis urna vestibulum id. Nullam eget fermentum nulla. Pellentesque sodales nisi non mi malesuada varius. Quisque quis ante id enim faucibus laoreet. Nullam commodo rhoncus accumsan. Aliquam ultrices fringilla diam vitae consectetur. In metus sapien, viverra sed enim vitae, condimentum tincidunt nunc. Duis at convallis nisi, a blandit purus.
+  </p>
 
-Mauris porttitor quam tortor. Proin sit amet orci nec ligula tincidunt lobortis. Nam id nibh euismod, sollicitudin mi id, porta velit. Quisque venenatis orci purus, sit amet facilisis urna vestibulum id. Nullam eget fermentum nulla. Pellentesque sodales nisi non mi malesuada varius. Quisque quis ante id enim faucibus laoreet. Nullam commodo rhoncus accumsan. Aliquam ultrices fringilla diam vitae consectetur. In metus sapien, viverra sed enim vitae, condimentum tincidunt nunc. Duis at convallis nisi, a blandit purus.
-    </p>
-
-  <% if !signed_in? %>
   <%= link_to "Sign up now!", signup_path, class: "btn btn-large btn-primary" %>
-  <% end %>
 </div>
+<% end %>

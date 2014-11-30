@@ -11,6 +11,10 @@ gem 'bcrypt-ruby', '3.1.2'
 gem 'bootstrap-sass', '2.3.2.0'
 gem 'sprockets', '2.11.0'
 
+gem 'faker',                '1.4.2'
+gem 'will_paginate',           '3.0.7'
+gem 'bootstrap-will_paginate', '0.0.10'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.2'
 
@@ -48,3 +52,4 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+gem 'webrick', '~> 1.3.1'

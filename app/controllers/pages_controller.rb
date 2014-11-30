@@ -1,6 +1,7 @@
 class PagesController < ApplicationController
   def home
     @titre = "Home"
+    @micropost = current_user.microposts.build if signed_in?
   end
 
   def contact
