@@ -1,6 +1,10 @@
 Twitter::Application.routes.draw do
+
+  resources :users
+  resources :sessions, only: [:new, :create, :destroy]
+  resources :microposts, only: [:create, :destroy]
+
   root 'pages#home'
-  match '/room', to: 'pages#room', via: 'get'
   match '/home', to: 'pages#home', via: 'get'
   match '/about', to: 'pages#about', via: 'get'
   match '/help', to: 'pages#help', via: 'get'
@@ -10,9 +14,4 @@ Twitter::Application.routes.draw do
   match '/contact', to: 'pages#contact', via: 'get'
   match '/search', to: 'search#search', via: 'get'
   # match '/settings', to: 'users#edit', via: 'get'
-
-  resources :users
-  resources :sessions, only: [:new, :create, :destroy]
-  resources :microposts, only: [:create, :destroy]
-
 end
