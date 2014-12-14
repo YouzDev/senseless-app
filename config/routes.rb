@@ -5,6 +5,7 @@ Twitter::Application.routes.draw do
   resources :microposts, only: [:create, :destroy]
 
   root 'pages#home'
+  match '/room', to: 'pages#room', via: 'get'
   match '/home', to: 'pages#home', via: 'get'
   match '/about', to: 'pages#about', via: 'get'
   match '/help', to: 'pages#help', via: 'get'
