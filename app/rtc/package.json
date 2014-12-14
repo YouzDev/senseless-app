@@ -1,14 +1,14 @@
 {
-    "name": "webrtc-rails",
+    "name": "senseless-app",
     "version": "0.0.1",
-    "description": "a simple RT server with socket.io to suport the WebRTC client comunication of data",
+    "description": "a simple RT SERVER to handle coms",
     "contributors": [
-	{   "name": "Francesc Gil", "email":"xescugil@gmail.com"
+	{   "name": "Catusse Axel", "email":"axel.catusse@gmail.com"
 	}
     ],
     "repository": {
 	"type": "git",
-	"url": "https://github.com/XescuGC/webrtc-rails"
+	"url": "https://github.com/catuss-a/senseless-app"
     },
     "dependencies": {
 	"socket.io": "0.9.16"
