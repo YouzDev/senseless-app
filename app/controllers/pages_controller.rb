@@ -4,6 +4,10 @@ class PagesController < ApplicationController
     @micropost = current_user.microposts.build if signed_in?
   end
 
+  def room
+    @titre = "room"
+  end
+
   def contact
     @titre = "Contact"
   end

@@ -1,0 +1,12 @@
+<div class="center hero-unit">
+  <h1><%= @titre %></h1>
+
+  <video id="webrtc-sourcevid" autoplay muted style="width: 320px; height: 240px; border: 1px solid black;"></video>
+  
+  <video id="webrtc-remotevid" autoplay style="width: 320px; height: 240px; border: 1px solid black;"></video>
+  
+  <script src="https://apprtc.appspot.com/js/adapter.js"></script>
+  <script src="http://192.168.1.20:2014/socket.io/socket.io.js"></script>
+  <script src="/javascript/rtc/client_signaling.js"></script>
+  <script src="/javascript/rtc/client.js"></script>
+</div>
