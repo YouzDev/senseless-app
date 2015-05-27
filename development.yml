@@ -8,8 +8,6 @@ web:
     service: webapp
   volumes:
     - .:/usr/src/app
-  ports:
-    - "3001:3000"
   links:
     - db
 
