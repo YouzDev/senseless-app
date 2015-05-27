@@ -5,6 +5,7 @@ gem 'rails', '4.0.8'
 
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
+gem 'mysql2'
 
 gem 'protected_attributes'
 gem 'bcrypt-ruby', '3.1.2'

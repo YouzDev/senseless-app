@@ -1,0 +1,13 @@
+db:
+  image: mysql:5.7
+  environment:
+    MYSQL_ROOT_PASSWORD: root
+web:
+  build: . 
+  command: bash -c 'rm tmp/pids/server.pid ; rails server -p 3000'
+  volumes:
+    - .:/usr/src/app
+  ports:
+    - "3001:3000"
+  links:
+    - db
